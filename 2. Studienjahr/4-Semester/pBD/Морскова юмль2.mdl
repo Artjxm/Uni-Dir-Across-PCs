@@ -333,57 +333,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object UseCaseView "Use Case View::Сдача экзамена" @1
-			location   	(1296, 1600)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    charSet    	204
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@1
-			    location   	(1296, 1738)
-			    anchor_loc 	1
-			    nlines     	2
-			    max_width  	630
-			    justify    	0
-			    label      	"Сдача экзамена")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"6076C23D0394"
-			height     	118)
-		    (object UseCaseView "Use Case View::Подготовка к экзамену" @2
-			location   	(1344, 1344)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    charSet    	204
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@2
-			    location   	(1344, 1482)
-			    anchor_loc 	1
-			    nlines     	2
-			    max_width  	630
-			    justify    	0
-			    label      	"Подготовка к экзамену")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"6076C226003D"
-			height     	118)
-		    (object UseCaseView "Use Case View::Самостоятельна подготовка" @3
+		    (object UseCaseView "Use Case View::Самостоятельна подготовка" @1
 			location   	(1440, 816)
 			font       	(object Font
 			    size       	10
@@ -396,7 +346,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@3
+			    Parent_View 	@1
 			    location   	(1440, 954)
 			    anchor_loc 	1
 			    nlines     	2
@@ -408,7 +358,107 @@
 			fill_color 	13434879
 			quidu      	"6076C290029E"
 			height     	118)
-		    (object ClassView "Class" "Use Case View::Ученик" @4
+		    (object UseCaseView "Use Case View::Прохождение КПП" @2
+			location   	(1648, 2080)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@2
+			    location   	(1648, 2218)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Прохождение КПП")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"6076C3420354"
+			height     	118)
+		    (object UseCaseView "Use Case View::Инструктаж" @3
+			location   	(2048, 1968)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@3
+			    location   	(2048, 2106)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Инструктаж")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"6076C348024A"
+			height     	118)
+		    (object UseCaseView "Use Case View::Сдача экзамена" @4
+			location   	(1296, 1600)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@4
+			    location   	(1296, 1738)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Сдача экзамена")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"6076C23D0394"
+			height     	118)
+		    (object UseCaseView "Use Case View::Подготовка к экзамену" @5
+			location   	(1344, 1344)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@5
+			    location   	(1344, 1482)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Подготовка к экзамену")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"6076C226003D"
+			height     	118)
+		    (object ClassView "Class" "Use Case View::Ученик" @6
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -424,11 +474,11 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@4
+			    Parent_View 	@6
 			    location   	(704, 1504)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	328
+			    max_width  	325
 			    justify    	0
 			    label      	"Ученик")
 			icon       	"Actor"
@@ -437,7 +487,7 @@
 			quidu      	"6076C21501B2"
 			annotation 	8
 			autoResize 	TRUE)
-		    (object AssociationViewNew "$UNNAMED$6" @5
+		    (object AssociationViewNew "$UNNAMED$6" @7
 			location   	(973, 1459)
 			font       	(object Font
 			    size       	10
@@ -453,31 +503,31 @@
 			line_color 	3342489
 			quidu      	"6076C25B016C"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$7" @6
-				Parent_View 	@5
+			    (object RoleView "$UNNAMED$7" @8
+				Parent_View 	@7
 				location   	(301, 179)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"6076C25C0025"
-				client     	@5
-				supplier   	@1
+				client     	@7
+				supplier   	@4
 				vertices   	(list Points
 				    (973, 1459)
 				    (1186, 1551))
 				line_style 	0)
-			    (object RoleView "$UNNAMED$8" @7
-				Parent_View 	@5
+			    (object RoleView "$UNNAMED$8" @9
+				Parent_View 	@7
 				location   	(301, 179)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"6076C25C0034"
-				client     	@5
-				supplier   	@4
+				client     	@7
+				supplier   	@6
 				vertices   	(list Points
 				    (973, 1459)
-				    (761, 1368))
+				    (761, 1367))
 				line_style 	0)))
-		    (object AssociationViewNew "$UNNAMED$3" @8
+		    (object AssociationViewNew "$UNNAMED$3" @10
 			location   	(997, 1344)
 			font       	(object Font
 			    size       	10
@@ -493,114 +543,31 @@
 			line_color 	3342489
 			quidu      	"6076C25803AE"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$4" @9
-				Parent_View 	@8
+			    (object RoleView "$UNNAMED$4" @11
+				Parent_View 	@10
 				location   	(325, 64)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"6076C2590276"
-				client     	@8
-				supplier   	@2
+				client     	@10
+				supplier   	@5
 				vertices   	(list Points
 				    (997, 1344)
-				    (1234, 1344))
+				    (1232, 1344))
 				line_style 	0)
-			    (object RoleView "$UNNAMED$5" @10
-				Parent_View 	@8
+			    (object RoleView "$UNNAMED$5" @12
+				Parent_View 	@10
 				location   	(325, 64)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"6076C2590278"
-				client     	@8
-				supplier   	@4
+				client     	@10
+				supplier   	@6
 				vertices   	(list Points
 				    (997, 1344)
 				    (761, 1344))
 				line_style 	0)))
-		    (object UseCaseView "Use Case View::Прохождение КПП" @11
-			location   	(1648, 2080)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    charSet    	204
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@11
-			    location   	(1648, 2218)
-			    anchor_loc 	1
-			    nlines     	2
-			    max_width  	630
-			    justify    	0
-			    label      	"Прохождение КПП")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"6076C3420354"
-			height     	118)
-		    (object UseCaseView "Use Case View::Инструктаж" @12
-			location   	(2048, 1968)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    charSet    	204
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@12
-			    location   	(2048, 2106)
-			    anchor_loc 	1
-			    nlines     	2
-			    max_width  	630
-			    justify    	0
-			    label      	"Инструктаж")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"6076C348024A"
-			height     	118)
-		    (object ClassView "Class" "Use Case View::Репетитор" @13
-			ShowCompartmentStereotypes 	TRUE
-			SuppressAttribute 	TRUE
-			SuppressOperation 	TRUE
-			IncludeAttribute 	TRUE
-			IncludeOperation 	TRUE
-			location   	(2688, 768)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    charSet    	204
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@13
-			    location   	(2687, 976)
-			    anchor_loc 	1
-			    nlines     	2
-			    max_width  	570
-			    justify    	0
-			    label      	"Репетитор")
-			icon       	"Business Actor"
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"6076C2E300C8"
-			width      	202
-			annotation 	8
-			autoResize 	TRUE)
-		    (object UseCaseView "Use Case View::Подготовка с репетитором" @14
+		    (object UseCaseView "Use Case View::Подготовка с репетитором" @13
 			location   	(2288, 1104)
 			font       	(object Font
 			    size       	10
@@ -613,7 +580,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@14
+			    Parent_View 	@13
 			    location   	(2288, 1242)
 			    anchor_loc 	1
 			    nlines     	2
@@ -625,7 +592,7 @@
 			fill_color 	13434879
 			quidu      	"6076C29D0069"
 			height     	118)
-		    (object DependencyView "" @15
+		    (object DependencyView "" @14
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -636,9 +603,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			stereotype 	(object SegLabel @16
-			    Parent_View 	@15
-			    location   	(1828, 1294)
+			stereotype 	(object SegLabel @15
+			    Parent_View 	@14
+			    location   	(1830, 1294)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -660,12 +627,45 @@
 			    orientation 	0)
 			line_color 	3342489
 			quidu      	"6076C2BE001D"
-			client     	@14
-			supplier   	@2
+			client     	@13
+			supplier   	@5
 			vertices   	(list Points
-			    (2043, 1161)
+			    (1967, 1182)
 			    (1452, 1313))
 			line_style 	0)
+		    (object ClassView "Class" "Use Case View::Репетитор" @16
+			ShowCompartmentStereotypes 	TRUE
+			SuppressAttribute 	TRUE
+			SuppressOperation 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(2688, 768)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@16
+			    location   	(2687, 976)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	570
+			    justify    	0
+			    label      	"Репетитор")
+			icon       	"Business Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"6076C2E300C8"
+			width      	202
+			annotation 	8
+			autoResize 	TRUE)
 		    (object AssociationViewNew "$UNNAMED$21" @17
 			location   	(2470, 946)
 			font       	(object Font
@@ -689,10 +689,10 @@
 				line_color 	3342489
 				quidu      	"6076C3A8034C"
 				client     	@17
-				supplier   	@14
+				supplier   	@13
 				vertices   	(list Points
 				    (2470, 946)
-				    (2352, 1045))
+				    (2351, 1045))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$23" @19
 				Parent_View 	@17
@@ -701,10 +701,10 @@
 				line_color 	3342489
 				quidu      	"6076C3A8034E"
 				client     	@17
-				supplier   	@13
+				supplier   	@16
 				vertices   	(list Points
 				    (2470, 946)
-				    (2588, 848))
+				    (2588, 846))
 				line_style 	0)))
 		    (object UseCaseView "Use Case View::Поиск репетитора" @20
 			location   	(1104, 528)
@@ -767,81 +767,12 @@
 				line_color 	3342489
 				quidu      	"6076C31A02B7"
 				client     	@21
-				supplier   	@4
+				supplier   	@6
 				vertices   	(list Points
 				    (869, 996)
-				    (739, 1264))
+				    (739, 1263))
 				line_style 	0)))
-		    (object ClassView "Class" "Use Case View::Родители" @24
-			ShowCompartmentStereotypes 	TRUE
-			IncludeAttribute 	TRUE
-			IncludeOperation 	TRUE
-			location   	(1600, 336)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    charSet    	204
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@24
-			    location   	(1600, 496)
-			    anchor_loc 	1
-			    nlines     	2
-			    max_width  	335
-			    justify    	0
-			    label      	"Родители")
-			icon       	"Actor"
-			icon_style 	"Icon"
-			line_color 	3342489
-			quidu      	"6076C44E0040"
-			annotation 	8
-			autoResize 	TRUE)
-		    (object AssociationViewNew "$UNNAMED$24" @25
-			location   	(1396, 411)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    charSet    	204
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			stereotype 	TRUE
-			line_color 	3342489
-			quidu      	"6076C45D00E7"
-			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$25" @26
-				Parent_View 	@25
-				location   	(-172, 331)
-				stereotype 	TRUE
-				line_color 	3342489
-				quidu      	"6076C45D030A"
-				client     	@25
-				supplier   	@20
-				vertices   	(list Points
-				    (1396, 411)
-				    (1254, 466))
-				line_style 	0)
-			    (object RoleView "$UNNAMED$26" @27
-				Parent_View 	@25
-				location   	(-172, 331)
-				stereotype 	TRUE
-				line_color 	3342489
-				quidu      	"6076C45D030C"
-				client     	@25
-				supplier   	@24
-				vertices   	(list Points
-				    (1396, 411)
-				    (1539, 356))
-				line_style 	0)))
-		    (object UseCaseView "Use Case View::Заключение договора" @28
+		    (object UseCaseView "Use Case View::Заключение договора" @24
 			location   	(2192, 512)
 			font       	(object Font
 			    size       	10
@@ -854,7 +785,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@28
+			    Parent_View 	@24
 			    location   	(2191, 688)
 			    anchor_loc 	1
 			    nlines     	2
@@ -868,7 +799,7 @@
 			quidu      	"6076C26600DE"
 			width      	306
 			height     	194)
-		    (object AssociationViewNew "$UNNAMED$12" @29
+		    (object AssociationViewNew "$UNNAMED$12" @25
 			location   	(2464, 650)
 			font       	(object Font
 			    size       	10
@@ -884,29 +815,98 @@
 			line_color 	3342489
 			quidu      	"6076C30B0314"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$13" @30
-				Parent_View 	@29
+			    (object RoleView "$UNNAMED$13" @26
+				Parent_View 	@25
 				location   	(-560, -1014)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"6076C30C02F5"
-				client     	@29
-				supplier   	@28
+				client     	@25
+				supplier   	@24
 				vertices   	(list Points
 				    (2464, 650)
-				    (2342, 587))
+				    (2192, 512))
 				line_style 	0)
-			    (object RoleView "$UNNAMED$14" @31
-				Parent_View 	@29
+			    (object RoleView "$UNNAMED$14" @27
+				Parent_View 	@25
 				location   	(-560, -1014)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"6076C30C02F7"
-				client     	@29
-				supplier   	@13
+				client     	@25
+				supplier   	@16
 				vertices   	(list Points
 				    (2464, 650)
-				    (2587, 714))
+				    (2588, 713))
+				line_style 	0)))
+		    (object ClassView "Class" "Use Case View::Родители" @28
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(1600, 336)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@28
+			    location   	(1600, 496)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	325
+			    justify    	0
+			    label      	"Родители")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			quidu      	"6076C44E0040"
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$24" @29
+			location   	(1396, 411)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"6076C45D00E7"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$25" @30
+				Parent_View 	@29
+				location   	(-172, 331)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"6076C45D030A"
+				client     	@29
+				supplier   	@20
+				vertices   	(list Points
+				    (1396, 411)
+				    (1254, 465))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$26" @31
+				Parent_View 	@29
+				location   	(-172, 331)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"6076C45D030C"
+				client     	@29
+				supplier   	@28
+				vertices   	(list Points
+				    (1396, 411)
+				    (1539, 354))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$30" @32
 			location   	(1847, 407)
@@ -931,10 +931,10 @@
 				line_color 	3342489
 				quidu      	"6076C476039F"
 				client     	@32
-				supplier   	@28
+				supplier   	@24
 				vertices   	(list Points
 				    (1847, 407)
-				    (2038, 463))
+				    (2040, 463))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$32" @34
 				Parent_View 	@32
@@ -943,7 +943,7 @@
 				line_color 	3342489
 				quidu      	"6076C47603AF"
 				client     	@32
-				supplier   	@24
+				supplier   	@28
 				vertices   	(list Points
 				    (1847, 407)
 				    (1657, 351))
@@ -983,8 +983,8 @@
 			    orientation 	1)
 			line_color 	3342489
 			quidu      	"6076C2B002C6"
-			client     	@2
-			supplier   	@3
+			client     	@5
+			supplier   	@1
 			vertices   	(list Points
 			    (1352, 1286)
 			    (1408, 979))
@@ -1027,7 +1027,7 @@
 			    default_color 	TRUE)
 			stereotype 	(object SegLabel @39
 			    Parent_View 	@38
-			    location   	(2268, 1577)
+			    location   	(2268, 1578)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -1050,10 +1050,10 @@
 			line_color 	3342489
 			quidu      	"6076C61C01E9"
 			client     	@37
-			supplier   	@2
+			supplier   	@5
 			vertices   	(list Points
 			    (2753, 1802)
-			    (1557, 1411))
+			    (1664, 1446))
 			line_style 	0)
 		    (object UseCaseView "Use Case View::Ожидание результатов" @40
 			location   	(1264, 2288)
@@ -1115,7 +1115,7 @@
 			    orientation 	0)
 			line_color 	3342489
 			quidu      	"6076C37801C5"
-			client     	@1
+			client     	@4
 			supplier   	@37
 			vertices   	(list Points
 			    (1404, 1614)
@@ -1156,8 +1156,8 @@
 			    orientation 	0)
 			line_color 	3342489
 			quidu      	"6076C3680274"
-			client     	@1
-			supplier   	@11
+			client     	@4
+			supplier   	@2
 			vertices   	(list Points
 			    (1415, 1763)
 			    (1604, 2022))
@@ -1197,10 +1197,10 @@
 			    orientation 	0)
 			line_color 	3342489
 			quidu      	"6076C371035D"
-			client     	@1
-			supplier   	@12
+			client     	@4
+			supplier   	@3
 			vertices   	(list Points
-			    (1449, 1672)
+			    (1616, 1756)
 			    (1937, 1912))
 			line_style 	0)
 		    (object DependencyView "" @47
@@ -1238,7 +1238,7 @@
 			    orientation 	1)
 			line_color 	3342489
 			quidu      	"6076C88F016E"
-			client     	@1
+			client     	@4
 			supplier   	@40
 			vertices   	(list Points
 			    (1284, 1763)
@@ -1251,6 +1251,350 @@
 	subsystem  	"Component View"
 	quidu      	"39C9260C00D7"
 	logical_models 	(list unit_reference_list
+	    (object Class "Контроллер: Подготовка и сдача ЕГЭ"
+		quid       	"607FF7B9037C"
+		documentation 	"Используется для сохранения информации о результатах учеников по сдаче экзамена"
+		stereotype 	"control"
+		used_nodes 	(list uses_relationship_list
+		    (object Uses_Relationship
+			quid       	"6080036C001E"
+			stereotype 	"friend permission"
+			supplier   	"Logical View::Репетитор"
+			quidu      	"6080007A0248"))
+		operations 	(list Operations
+		    (object Operation "добавить экземпляр класса Ученик"
+			quid       	"60800B3F0011"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "удалить экземпляр класса Ученик"
+			quid       	"60800B7303DB"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0))
+		language   	"ANSI C++"
+		persistence 	"Persistent")
+	    (object Class "Подготовка и сдача ЕГЭ"
+		quid       	"607FF9F10302"
+		documentation 	"Реализует логику функционирования контроллера"
+		stereotype 	"entity"
+		operations 	(list Operations
+		    (object Operation "добавить нового ученика"
+			quid       	"60800584038F"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "заключить договор на оказание услуг обучения"
+			quid       	"6080058F02C9"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0))
+		class_attributes 	(list class_attribute_list
+		    (object ClassAttribute "ФИО ученика"
+			quid       	"608004FF00BF"
+			type       	"String"
+			quidu      	"39CD6AE1011A")
+		    (object ClassAttribute "ID ученика"
+			quid       	"6080050D03B9"
+			type       	"integer")
+		    (object ClassAttribute "Стоимость обучения у репетитора"
+			quid       	"6080051B0356"
+			type       	"integer")
+		    (object ClassAttribute "ФИО родителей ученика"
+			quid       	"6080052B024C"
+			type       	"String"
+			quidu      	"39CD6AE1011A"))
+		language   	"ANSI C++")
+	    (object Class "Онлайн школа подготовки к ЕГЭ"
+		quid       	"607FFCF400C7"
+		stereotype 	"entity"
+		operations 	(list Operations
+		    (object Operation "добавить ученика в базу данных репетитора"
+			quid       	"608003FA016F"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "предоставить доступ к теории"
+			quid       	"6080041703B2"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "предоставить доступ к домашним заданиям"
+			quid       	"6080043701D3"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "предоставить возможность написать пробный экзамен"
+			quid       	"6080043F025C"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "удалить ученика из базы данных"
+			quid       	"6080044D03A4"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "отправить отчет об успеваемости ученика родителям"
+			quid       	"608004590301"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0))
+		class_attributes 	(list class_attribute_list
+		    (object ClassAttribute "ФИО ученика"
+			quid       	"60800A780184"
+			type       	"String"
+			quidu      	"39CD6AE1011A")
+		    (object ClassAttribute "ID ученика"
+			quid       	"60800A890099"
+			type       	"Integer"
+			quidu      	"39CD6BC50328")
+		    (object ClassAttribute "ФИО Родителей"
+			quid       	"60800A9002D8"
+			type       	"String"
+			quidu      	"39CD6AE1011A"))
+		language   	"ANSI C++")
+	    (object Class "Ученик"
+		quid       	"607FFD1201F2"
+		stereotype 	"entity"
+		operations 	(list Operations
+		    (object Operation "выучить теорию"
+			quid       	"608001DE017C"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "выполнить пробный вариант"
+			quid       	"6080021D0114"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "написать экзамен"
+			quid       	"6080022901CE"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "запросить результаты ЕГЭ"
+			quid       	"608002820164"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "выполнить домашнюю работу"
+			quid       	"608002EB036E"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0))
+		class_attributes 	(list class_attribute_list
+		    (object ClassAttribute "ФИО ученика"
+			quid       	"60800AB1005F"
+			type       	"String"
+			quidu      	"39CD6AE1011A")
+		    (object ClassAttribute "ID ученика"
+			quid       	"60800ABA0312"
+			type       	"Integer"
+			quidu      	"39CD6BC50328"))
+		language   	"ANSI C++")
+	    (object Class "Репетитор"
+		quid       	"6080007A0248"
+		stereotype 	"entity"
+		operations 	(list Operations
+		    (object Operation "преподать теоретический материал"
+			quid       	"608002AF03BE"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "провести пробный экзамен"
+			quid       	"608002BD02BA"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "проверить домашнюю работу"
+			quid       	"608002C401B5"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "задать домашнюю работу"
+			quid       	"608002CB007E"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "начать заключение договора об оказании услуг обучения"
+			quid       	"6080034400B0"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "расторгнуть договор об оказании услуг обучения"
+			quid       	"608003550178"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0))
+		class_attributes 	(list class_attribute_list
+		    (object ClassAttribute "Стоимость обучения у репетитора"
+			quid       	"60800AD903A0"
+			type       	"Integer"
+			quidu      	"39CD6BC50328")
+		    (object ClassAttribute "Условия заключения договора"
+			quid       	"60800B040295"
+			type       	"String"
+			quidu      	"39CD6AE1011A"))
+		language   	"ANSI C++")
+	    (object Class "Родители"
+		quid       	"6080008602BB"
+		stereotype 	"entity"
+		operations 	(list Operations
+		    (object Operation "оплатить обучение у репетитора"
+			quid       	"608002F7011A"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "запросить отчет успеваемости ребенка"
+			quid       	"608003090279"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "заключить договор об обучении"
+			quid       	"6080032401E5"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "расторгнуть договор об обучении"
+			quid       	"6080033601C1"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0))
+		class_attributes 	(list class_attribute_list
+		    (object ClassAttribute "ФИО родителей"
+			quid       	"60800B2302AC"
+			type       	"String"
+			quidu      	"39CD6AE1011A"))
+		language   	"ANSI C++")
+	    (object Class "IПортал госуслуг"
+		quid       	"608003B900E3"
+		stereotype 	"Interface"
+		operations 	(list Operations
+		    (object Operation "предоставить результаты написания экзамена"
+			quid       	"60800474013A"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0))
+		language   	"ANSI C++")
+	    (object Class "Приемная комиссия проведения экзамена"
+		quid       	"608003DA018C"
+		stereotype 	"entity"
+		operations 	(list Operations
+		    (object Operation "провести инструктаж"
+			quid       	"6080048B01F3"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "пропустить ученика через КПП"
+			quid       	"6080049002AC"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "отказать ученику в приеме экзамена"
+			quid       	"6080049E002A"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "принять экзамен у ученика"
+			quid       	"608004A700F0"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0))
+		class_attributes 	(list class_attribute_list
+		    (object ClassAttribute "ФИО ученика"
+			quid       	"60800D8E0269"
+			type       	"String"
+			quidu      	"39CD6AE1011A")
+		    (object ClassAttribute "ID ученика"
+			quid       	"60800D97001A"
+			type       	"Integer"
+			quidu      	"39CD6BC50328"))
+		language   	"ANSI C++")
+	    (object Association "$UNNAMED$36"
+		quid       	"6080037A0219"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$37"
+			quid       	"6080037C0038"
+			supplier   	"Logical View::Репетитор"
+			quidu      	"6080007A0248"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$38"
+			quid       	"6080037C003A"
+			supplier   	"Logical View::Контроллер\\: Подготовка и сдача ЕГЭ"
+			quidu      	"607FF7B9037C")))
+	    (object Association "$UNNAMED$39"
+		quid       	"6080037F03A9"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$40"
+			quid       	"6080038100CB"
+			supplier   	"Logical View::Родители"
+			quidu      	"6080008602BB"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$41"
+			quid       	"6080038100D2"
+			supplier   	"Logical View::Контроллер\\: Подготовка и сдача ЕГЭ"
+			quidu      	"607FF7B9037C")))
+	    (object Association "$UNNAMED$42"
+		quid       	"60800384011A"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$43"
+			quid       	"60800387001C"
+			supplier   	"Logical View::Ученик"
+			quidu      	"607FFD1201F2"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$44"
+			quid       	"60800387002B"
+			supplier   	"Logical View::Контроллер\\: Подготовка и сдача ЕГЭ"
+			quidu      	"607FF7B9037C")))
+	    (object Association "$UNNAMED$45"
+		quid       	"608004C3004E"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$46"
+			quid       	"608004C40086"
+			supplier   	"Logical View::Онлайн школа подготовки к ЕГЭ"
+			quidu      	"607FFCF400C7"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$47"
+			quid       	"608004C40088"
+			supplier   	"Logical View::Контроллер\\: Подготовка и сдача ЕГЭ"
+			quidu      	"607FF7B9037C")))
+	    (object Association "$UNNAMED$48"
+		quid       	"608004C601E8"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$49"
+			quid       	"608004C802E5"
+			supplier   	"Logical View::IПортал госуслуг"
+			quidu      	"608003B900E3"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$50"
+			quid       	"608004C802EB"
+			supplier   	"Logical View::Контроллер\\: Подготовка и сдача ЕГЭ"
+			quidu      	"607FF7B9037C")))
+	    (object Association "$UNNAMED$51"
+		quid       	"608004CB0011"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$52"
+			quid       	"608004CC0077"
+			supplier   	"Logical View::Приемная комиссия проведения экзамена"
+			quidu      	"608003DA018C"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$53"
+			quid       	"608004CC0079"
+			supplier   	"Logical View::Контроллер\\: Подготовка и сдача ЕГЭ"
+			quidu      	"607FF7B9037C")))
+	    (object Association "$UNNAMED$54"
+		quid       	"60800556011F"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$55"
+			quid       	"608005560399"
+			supplier   	"Logical View::Подготовка и сдача ЕГЭ"
+			quidu      	"607FF9F10302"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$56"
+			quid       	"60800556039B"
+			supplier   	"Logical View::Контроллер\\: Подготовка и сдача ЕГЭ"
+			quidu      	"607FF7B9037C"
+			is_aggregate 	TRUE)))
 	    (object Class_Category "javax"
 		is_unit    	TRUE
 		is_loaded  	FALSE
@@ -1265,44 +1609,24 @@
 		is_unit    	TRUE
 		is_loaded  	FALSE
 		file_name  	"$FRAMEWORK_PATH\\Shared Components\\j2se_1_3_org.cat"
-		quid       	"39C92693036F"))
+		quid       	"39C92693036F")
+	    (object Mechanism @49
+		logical_models 	(list unit_reference_list)))
 	logical_presentations 	(list unit_reference_list
-	    (object ClassDiagram "Package Hierarchy"
-		quid       	"39C9261001B8"
-		title      	"Package Hierarchy"
+	    (object ClassDiagram "EGEDiagram"
+		quid       	"607FF70A01E1"
+		title      	"EGEDiagram"
 		zoom       	100
 		max_height 	28350
 		max_width  	21600
-		origin_x   	0
+		origin_x   	3564
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object CategoryView "Logical View::java" @49
-			location   	(208, 272)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    charSet    	204
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@49
-			    location   	(64, 188)
-			    nlines     	2
-			    max_width  	288
-			    justify    	0
-			    label      	"java")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	16777215
-			quidu      	"39C92661003B"
-			width      	300
-			height     	180)
-		    (object CategoryView "Logical View::javax" @50
-			location   	(656, 272)
+		    (object ClassView "Class" "Logical View::Репетитор" @50
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(3248, 608)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1315,19 +1639,43 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@50
-			    location   	(512, 188)
+			    location   	(3248, 764)
+			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	288
+			    max_width  	1123
 			    justify    	0
-			    label      	"javax")
+			    label      	"Репетитор")
+			icon       	"entity"
 			icon_style 	"Icon"
 			line_color 	3342489
-			fill_color 	16777215
-			quidu      	"39C926610018"
-			width      	300
-			height     	180)
-		    (object CategoryView "Logical View::org" @51
-			location   	(1104, 272)
+			fill_color 	13434879
+			quidu      	"6080007A0248"
+			compartment 	(object Compartment
+			    Parent_View 	@50
+			    location   	(2663, 805)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    icon_style 	"Icon"
+			    anchor     	2
+			    nlines     	9
+			    max_width  	1115
+			    justify    	0)
+			height     	154
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::Родители" @51
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(3328, 1504)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1340,6 +1688,686 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@51
+			    location   	(3328, 1660)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	1131
+			    justify    	0
+			    label      	"Родители")
+			icon       	"entity"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"6080008602BB"
+			compartment 	(object Compartment
+			    Parent_View 	@51
+			    location   	(2918, 1701)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    icon_style 	"Icon"
+			    anchor     	2
+			    nlines     	6
+			    max_width  	781
+			    justify    	0)
+			height     	154
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::Ученик" @52
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(2224, 352)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@52
+			    location   	(2224, 508)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	1085
+			    justify    	0
+			    label      	"Ученик")
+			icon       	"entity"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"607FFD1201F2"
+			compartment 	(object Compartment
+			    Parent_View 	@52
+			    location   	(1900, 549)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    icon_style 	"Icon"
+			    anchor     	2
+			    nlines     	8
+			    max_width  	619
+			    justify    	0)
+			height     	154
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::Онлайн школа подготовки к ЕГЭ" @53
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(1200, 432)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@53
+			    location   	(1200, 588)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	1072
+			    justify    	0
+			    label      	"Онлайн школа подготовки к ЕГЭ")
+			icon       	"entity"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"607FFCF400C7"
+			compartment 	(object Compartment
+			    Parent_View 	@53
+			    location   	(643, 629)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    icon_style 	"Icon"
+			    anchor     	2
+			    nlines     	10
+			    max_width  	1066
+			    justify    	0)
+			height     	154
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::IПортал госуслуг" @54
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(592, 1296)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@54
+			    location   	(591, 1404)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	915
+			    justify    	0
+			    label      	"IПортал госуслуг")
+			icon       	"Interface"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"608003B900E3"
+			compartment 	(object Compartment
+			    Parent_View 	@54
+			    location   	(113, 1445)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    icon_style 	"Icon"
+			    anchor     	2
+			    nlines     	2
+			    max_width  	910
+			    justify    	0)
+			width      	58
+			height     	58
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::Приемная комиссия проведения экзамена" @55
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(1152, 1936)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@55
+			    location   	(1152, 2092)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	947
+			    justify    	0
+			    label      	"Приемная комиссия проведения экзамена")
+			icon       	"entity"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"608003DA018C"
+			compartment 	(object Compartment
+			    Parent_View 	@55
+			    location   	(763, 2133)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    icon_style 	"Icon"
+			    anchor     	2
+			    nlines     	7
+			    max_width  	738
+			    justify    	0)
+			height     	154
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::Подготовка и сдача ЕГЭ" @56
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(2416, 2096)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@56
+			    location   	(2416, 2252)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	506
+			    justify    	0
+			    label      	"Подготовка и сдача ЕГЭ")
+			icon       	"entity"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"607FF9F10302"
+			compartment 	(object Compartment
+			    Parent_View 	@56
+			    location   	(1924, 2293)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    icon_style 	"Icon"
+			    anchor     	2
+			    nlines     	7
+			    max_width  	938
+			    justify    	0)
+			height     	154
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::Контроллер\\: Подготовка и сдача ЕГЭ" @57
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(2144, 1264)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@57
+			    location   	(2143, 1425)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	479
+			    justify    	0
+			    label      	"Контроллер: Подготовка и сдача ЕГЭ")
+			icon       	"control"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"607FF7B9037C"
+			compartment 	(object Compartment
+			    Parent_View 	@57
+			    location   	(1767, 1491)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    icon_style 	"Icon"
+			    anchor     	2
+			    nlines     	3
+			    max_width  	716
+			    justify    	0)
+			width      	158
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$36" @58
+			location   	(2454, 1076)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"6080037A0219"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$37" @59
+				Parent_View 	@58
+				location   	(358, -28)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"6080037C0038"
+				client     	@58
+				supplier   	@50
+				vertices   	(list Points
+				    (2454, 1076)
+				    (3030, 735))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$38" @60
+				Parent_View 	@58
+				location   	(358, -28)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"6080037C003A"
+				client     	@58
+				supplier   	@57
+				vertices   	(list Points
+				    (2454, 1076)
+				    (2220, 1213))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$39" @61
+			location   	(2736, 1381)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"6080037F03A9"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$40" @62
+				Parent_View 	@61
+				location   	(640, 277)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"6080038100CB"
+				client     	@61
+				supplier   	@51
+				vertices   	(list Points
+				    (2736, 1381)
+				    (3250, 1486))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$41" @63
+				Parent_View 	@61
+				location   	(640, 277)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"6080038100D2"
+				client     	@61
+				supplier   	@57
+				vertices   	(list Points
+				    (2736, 1381)
+				    (2615, 1355))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$42" @64
+			location   	(2157, 1064)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"60800384011A"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$43" @65
+				Parent_View 	@64
+				location   	(61, -40)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"60800387001C"
+				client     	@64
+				supplier   	@52
+				vertices   	(list Points
+				    (2157, 1064)
+				    (2204, 533))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$44" @66
+				Parent_View 	@64
+				location   	(61, -40)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"60800387002B"
+				client     	@64
+				supplier   	@57
+				vertices   	(list Points
+				    (2157, 1064)
+				    (2146, 1182))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$45" @67
+			location   	(1899, 1046)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"608004C3004E"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$46" @68
+				Parent_View 	@67
+				location   	(-245, -218)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"608004C40086"
+				client     	@67
+				supplier   	@53
+				vertices   	(list Points
+				    (1899, 1046)
+				    (1406, 613))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$47" @69
+				Parent_View 	@67
+				location   	(-245, -218)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"608004C40088"
+				client     	@67
+				supplier   	@57
+				vertices   	(list Points
+				    (1899, 1046)
+				    (2064, 1191))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$48" @70
+			location   	(1342, 1277)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"608004C601E8"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$49" @71
+				Parent_View 	@70
+				location   	(-802, 13)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"608004C802E5"
+				client     	@70
+				supplier   	@54
+				vertices   	(list Points
+				    (1342, 1277)
+				    (618, 1291))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$50" @72
+				Parent_View 	@70
+				location   	(-802, 13)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"608004C802EB"
+				client     	@70
+				supplier   	@57
+				vertices   	(list Points
+				    (1342, 1277)
+				    (2065, 1264))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$51" @73
+			location   	(1504, 1694)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"608004CB0011"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$52" @74
+				Parent_View 	@73
+				location   	(-640, 430)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"608004CC0077"
+				client     	@73
+				supplier   	@55
+				vertices   	(list Points
+				    (1504, 1694)
+				    (1226, 1881))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$53" @75
+				Parent_View 	@73
+				location   	(-640, 430)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"608004CC0079"
+				client     	@73
+				supplier   	@57
+				vertices   	(list Points
+				    (1504, 1694)
+				    (1865, 1450))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$54" @76
+			location   	(2327, 1829)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"60800556011F"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$55" @77
+				Parent_View 	@76
+				location   	(183, 565)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"608005560399"
+				client     	@76
+				supplier   	@56
+				vertices   	(list Points
+				    (2327, 1829)
+				    (2389, 2020))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$56" @78
+				Parent_View 	@76
+				location   	(183, 565)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"60800556039B"
+				client     	@76
+				supplier   	@57
+				vertices   	(list Points
+				    (2327, 1829)
+				    (2202, 1450))
+				line_style 	0)))))
+	    (object ClassDiagram "Package Hierarchy"
+		quid       	"39C9261001B8"
+		title      	"Package Hierarchy"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list
+		    (object CategoryView "Logical View::java" @79
+			location   	(208, 272)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@79
+			    location   	(64, 188)
+			    nlines     	2
+			    max_width  	288
+			    justify    	0
+			    label      	"java")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	16777215
+			quidu      	"39C92661003B"
+			width      	300
+			height     	180)
+		    (object CategoryView "Logical View::javax" @80
+			location   	(656, 272)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@80
+			    location   	(512, 188)
+			    nlines     	2
+			    max_width  	288
+			    justify    	0
+			    label      	"javax")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	16777215
+			quidu      	"39C926610018"
+			width      	300
+			height     	180)
+		    (object CategoryView "Logical View::org" @81
+			location   	(1104, 272)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@81
 			    location   	(960, 188)
 			    nlines     	2
 			    max_width  	288
@@ -1360,7 +2388,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object NoteView @52
+		    (object NoteView @82
 			location   	(224, 624)
 			font       	(object Font
 			    size       	10
@@ -1376,7 +2404,7 @@
 			fill_color 	12632256
 			width      	300
 			height     	132)
-		    (object NoteView @53
+		    (object NoteView @83
 			location   	(704, 624)
 			font       	(object Font
 			    size       	10
@@ -1392,7 +2420,7 @@
 			fill_color 	8421631
 			width      	300
 			height     	132)
-		    (object NoteView @54
+		    (object NoteView @84
 			location   	(1200, 624)
 			font       	(object Font
 			    size       	10
@@ -1408,7 +2436,7 @@
 			fill_color 	12615680
 			width      	300
 			height     	132)
-		    (object NoteView @55
+		    (object NoteView @85
 			location   	(1664, 624)
 			font       	(object Font
 			    size       	10
@@ -1424,7 +2452,7 @@
 			fill_color 	16777215
 			width      	300
 			height     	132)
-		    (object Label @56
+		    (object Label @86
 			location   	(81, 369)
 			font       	(object Font
 			    size       	12
@@ -1440,7 +2468,7 @@
 			max_width  	1163
 			justify    	1
 			label      	"J2EE: Java 2 Platform, Enterprise Edition - v 1.2.1")
-		    (object Label @57
+		    (object Label @87
 			location   	(96, 608)
 			font       	(object Font
 			    size       	10
@@ -1456,7 +2484,7 @@
 			max_width  	268
 			justify    	1
 			label      	"Abstract Class")
-		    (object Label @58
+		    (object Label @88
 			location   	(592, 608)
 			font       	(object Font
 			    size       	10
@@ -1472,7 +2500,7 @@
 			max_width  	225
 			justify    	1
 			label      	"Final Class")
-		    (object Label @59
+		    (object Label @89
 			location   	(1104, 608)
 			font       	(object Font
 			    size       	10
@@ -1488,7 +2516,7 @@
 			max_width  	206
 			justify    	1
 			label      	"Interface")
-		    (object Label @60
+		    (object Label @90
 			location   	(1552, 608)
 			font       	(object Font
 			    size       	10
@@ -1503,7 +2531,17 @@
 			nlines     	1
 			max_width  	144
 			justify    	1
-			label      	"Class")))))
+			label      	"Class")))
+	    (object ObjectDiagram "CollaborationMain"
+		mechanism_ref 	@49
+		quid       	"60846B62028C"
+		title      	"CollaborationMain"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
     root_subsystem 	(object SubSystem "Component View"
 	quid       	"39C9260C00D7"
 	physical_models 	(list unit_reference_list
@@ -1843,6 +2881,30 @@
 		    (object Attribute
 			tool       	"Data Modeler"
 			name       	"ForeignKeyPrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ViewCounter"
+			value      	0)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"JoinCounter"
+			value      	0)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"TableSpaceCounter"
+			value      	0)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"cONTAINERCounter"
+			value      	0)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ViewPrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"TableSpacePrefix"
 			value      	"")))
 	    (object Attribute
 		tool       	"Data Modeler"
@@ -1867,6 +2929,42 @@
 		    (object Attribute
 			tool       	"Data Modeler"
 			name       	"Location"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsTableSpace"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"TableSpaceType"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsDeault"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"BufferPool"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ExtentSize"
+			value      	1)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"PrefetchSize"
+			value      	1)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"PageSize"
+			value      	4)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ManagedBy"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"ContainerList"
 			value      	"")))
 	    (object Attribute
 		tool       	"Data Modeler"
@@ -1975,7 +3073,39 @@
 		    (object Attribute
 			tool       	"Data Modeler"
 			name       	"PersistToServer"
-			value      	"")))
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"TableSpaceID"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"CorrelationName"
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsUpdateable"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsSnapShot"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsDistinct"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsPackage"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsPackageWrapped"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsPackageBodyWrapped"
+			value      	FALSE)))
 	    (object Attribute
 		tool       	"Data Modeler"
 		name       	"default__Attribute"
@@ -2271,7 +3401,11 @@
 		    (object Attribute
 			tool       	"Data Modeler"
 			name       	"DefaultValueType"
-			value      	"")))
+			value      	"")
+		    (object Attribute
+			tool       	"Data Modeler"
+			name       	"IsWrapped"
+			value      	FALSE)))
 	    (object Attribute
 		tool       	"Data Modeler"
 		name       	"default__Parameter"
