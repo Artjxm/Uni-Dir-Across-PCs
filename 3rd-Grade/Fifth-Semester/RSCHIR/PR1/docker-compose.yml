@@ -1,0 +1,19 @@
+version: '3'
+
+services: 
+  db:
+    image: mariadb
+    volumes: 
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+    restart: always
+    environment: 
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+  website:
+    build: ./website
+    volumes: 
+      - ./website:/var/www/html
+    ports: 
+     - 8000:80
+    depends_on: 
+      - db
+  
