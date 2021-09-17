@@ -1,0 +1,108 @@
+#include string
+#include iostream
+#include vector
+
+class Tree
+{
+private
+	stdstring name;
+	int stat;
+	stdvectorTree  leaves;
+
+public
+	int m_lvl = 0;
+	Tree(stdstring name, int stat)
+		 name(name), stat(stat) {}
+		
+	~Tree() {leaves.clear();}
+	
+	void append(Tree  l) {leaves.push_back(l); l-m_lvl = this-m_lvl+1;}
+	
+	Tree  find(stdstring name, bool &f)
+	{
+		if (name == this-name)
+		{
+			f = true;
+			return this;
+		}
+		
+		for (Tree  leaf  leaves)
+		{
+			Tree  result = leaf-find(name, f);
+			if (f) return result;
+		}
+		
+		return nullptr;
+	}
+	
+	void print(int &current, int &max)
+	{
+		if (m_lvl == 1) stdcout      ;
+		else if (m_lvl == 2) stdcout          ;
+		stdcout  name;
+		if (++current  max) stdcout  'n';
+		
+		for (Tree  leaf  leaves)
+			leaf-print(current, max);
+	}
+};
+
+class Two  Tree{
+public
+	Two(stdstring name, int stat)  Tree(name, stat){};
+};
+
+class Three  Tree{
+public
+	Three(stdstring name, int stat)  Tree(name, stat){};
+};
+
+int main()
+{
+	stdstring name, parentName;
+	int stat, c1, counter(1);
+	
+	stdcin  name;
+	
+	Tree root = Tree(name, 1);
+	
+	while (true)
+	{
+		stdcin  parentName;
+		if (parentName == endtree) break;
+		
+		stdcin  name  c1  stat;
+		
+		bool f(false);
+		
+		Tree  parent = root.find(parentName, f);
+		
+		Tree  leaf;
+		
+		if (c1 == 2) 
+			leaf = (Tree ) new Two(name, stat);
+		else if (c1 == 3)
+			leaf = (Tree ) new Three(name, stat);
+	
+	parent-append(leaf);
+	++counter;
+	}
+	
+	stdcout  Object treen;
+	
+	int current(0);
+	root.print(current, counter);
+}
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	

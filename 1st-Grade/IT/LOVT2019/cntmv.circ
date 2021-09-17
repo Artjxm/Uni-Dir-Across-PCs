@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0"/>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="cntmv"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="cntmv">
+    <a name="circuit" val="cntmv"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <rect fill="none" height="67" stroke="#000000" stroke-width="2" width="60" x="50" y="55"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="80" y="73">Cntmv</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="62" y="94">A</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="96" y="94">V</text>
+      <circ-port height="8" pin="240,210" width="8" x="46" y="86"/>
+      <circ-port height="10" pin="610,210" width="10" x="105" y="85"/>
+      <circ-anchor facing="east" height="6" width="6" x="77" y="117"/>
+    </appear>
+    <wire from="(240,210)" to="(350,210)"/>
+    <wire from="(490,210)" to="(610,210)"/>
+    <comp lib="4" loc="(490,210)" name="ROM">
+      <a name="addrWidth" val="11"/>
+      <a name="dataWidth" val="12"/>
+      <a name="contents">addr/data: 11 12
+187 fe a7 c4 1a4 95 84 eb
+fd 1c7 1d5 1e5 db 1b9 1b6 1f6
+1f9 1b5 fb c3 1a3 83 1ca 88
+99 96 aa bb c8 cc dd ed
+e2 ee ff 1a8 1d6 d2 192 1d9
+1e6 1e9 1f5 b2 1a1 c1 81 f2
+1b2 181 a1 1c1 1f2 1e2 92 1d2
+b5 1fb 183 1c3 a3 1c8 a8 ca
+d6 d9 e6 e9 f5 c7 e5 188
+87 d5 f9 184 a4 f6 195 196
+199 1a7 b6 1aa b9 91 1bb 1c4
+1cc 1d1 1db 1dd 1e1 1eb 1ed 1ee
+1fd 1fe 1ff 1b1 182 1c2 a2 c9
+86 c6 98 da ea f7 1a6 1a9
+1b4 1d8 1dc 1e3 93 1d3 b7 1e8
+1ec 1f1 1f3 1cb ba 1f4 1b8 1e4
+1b3 d7 85 94 e7 c5 fa f3
+197 1a5 1d4 b8 cb 1ba 1f8 97
+e4 b3 a5 fc 185 d4 f8 a6
+d8 a9 dc e8 f4 ec 186 194
+e3 b4 198 1b7 1c5 d3 193 1c6
+1c9 1d7 1da 1e7 b1 1ea 1f7 1fa
+1fc c2 f1 1a2 82 d1 191 e1
+187 fe a7 c4 1a4 95 84 eb
+fd 1c7 1d5 1e5 db 1b9 1b6 1f6
+1f9 1b5 fb c3 1a3 83 1ca 88
+99 96 aa bb c8 cc dd ed
+e2 ee ff 1a8 1d6 d2 192 1d9
+1e6 1e9 1f5 b2 1a1 c1 81 f2
+1b2 181 a1 1c1 1f2 1e2 92 1d2
+b5 1fb 183 1c3 a3 1c8 a8 ca
+d6 d9 e6 e9 f5 c7 e5 188
+87 d5 f9 184 a4 f6 195 196
+199 1a7 b6 1aa b9 91 1bb 1c4
+1cc 1d1 1db 1dd 1e1 1eb 1ed 1ee
+1fd 1fe 1ff 1b1 182 1c2 a2 c9
+86 c6 98 da ea f7 1a6 1a9
+1b4 1d8 1dc 1e3 93 1d3 b7 1e8
+1ec 1f1 1f3 1cb ba 1f4 1b8 1e4
+1b3 d7 85 94 e7 c5 fa f3
+197 1a5 1d4 b8 cb 1ba 1f8 97
+e4 b3 a5 fc 185 d4 f8 a6
+d8 a9 dc e8 f4 ec 186 194
+e3 b4 198 1b7 1c5 d3 193 1c6
+1c9 1d7 1da 1e7 b1 1ea 1f7 1fa
+1fc c2 f1 1a2 82 d1 191 e1
+187 fe a7 c4 1a4 95 84 eb
+fd 1c7 1d5 1e5 db 1b9 1b6 1f6
+1f9 1b5 fb c3 1a3 83 1ca 88
+99 96 aa bb c8 cc dd ed
+e2 ee ff 1a8 1d6 d2 192 1d9
+1e6 1e9 1f5 b2 1a1 c1 81 f2
+1b2 181 a1 1c1 1f2 1e2 92 1d2
+b5 1fb 183 1c3 a3 1c8 a8 ca
+d6 d9 e6 e9 f5 c7 e5 188
+87 d5 f9 184 a4 f6 195 196
+199 1a7 b6 1aa b9 91 1bb 1c4
+1cc 1d1 1db 1dd 1e1 1eb 1ed 1ee
+1fd 1fe 1ff 1b1 182 1c2 a2 c9
+86 c6 98 da ea f7 1a6 1a9
+1b4 1d8 1dc 1e3 93 1d3 b7 1e8
+1ec 1f1 1f3 1cb ba 1f4 1b8 1e4
+1b3 d7 85 94 e7 c5 fa f3
+197 1a5 1d4 b8 cb 1ba 1f8 97
+e4 b3 a5 fc 185 d4 f8 a6
+d8 a9 dc e8 f4 ec 186 194
+e3 b4 198 1b7 1c5 d3 193 1c6
+1c9 1d7 1da 1e7 b1 1ea 1f7 1fa
+1fc c2 f1 1a2 82 d1 191 e1
+187 fe a7 c4 1a4 95 84 eb
+fd 1c7 1d5 1e5 db 1b9 1b6 1f6
+1f9 1b5 fb c3 1a3 83 1ca 88
+99 96 aa bb c8 cc dd ed
+e2 ee ff 1a8 1d6 d2 192 1d9
+1e6 1e9 1f5 b2 1a1 c1 81 f2
+1b2 181 a1 1c1 1f2 1e2 92 1d2
+b5 1fb 183 1c3 a3 1c8 a8 ca
+d6 d9 e6 e9 f5 c7 e5 188
+87 d5 f9 184 a4 f6 195 196
+199 1a7 b6 1aa b9 91 1bb 1c4
+1cc 1d1 1db 1dd 1e1 1eb 1ed 1ee
+1fd 1fe 1ff 1b1 182 1c2 a2 c9
+86 c6 98 da ea f7 1a6 1a9
+1b4 1d8 1dc 1e3 93 1d3 b7 1e8
+1ec 1f1 1f3 1cb ba 1f4 1b8 1e4
+1b3 d7 85 94 e7 c5 fa f3
+197 1a5 1d4 b8 cb 1ba 1f8 97
+e4 b3 a5 fc 185 d4 f8 a6
+d8 a9 dc e8 f4 ec 186 194
+e3 b4 198 1b7 1c5 d3 193 1c6
+1c9 1d7 1da 1e7 b1 1ea 1f7 1fa
+1fc c2 f1 1a2 82 d1 191 e1
+187 fe a7 c4 1a4 95 84 eb
+fd 1c7 1d5 1e5 db 1b9 1b6 1f6
+1f9 1b5 fb c3 1a3 83 1ca 88
+99 96 aa bb c8 cc dd ed
+e2 ee ff 1a8 1d6 d2 192 1d9
+1e6 1e9 1f5 b2 1a1 c1 81 f2
+1b2 181 a1 1c1 1f2 1e2 92 1d2
+b5 1fb 183 1c3 a3 1c8 a8 ca
+d6 d9 e6 e9 f5 c7 e5 188
+87 d5 f9 184 a4 f6 195 196
+199 1a7 b6 1aa b9 91 1bb 1c4
+1cc 1d1 1db 1dd 1e1 1eb 1ed 1ee
+1fd 1fe 1ff 1b1 182 1c2 a2 c9
+86 c6 98 da ea f7 1a6 1a9
+1b4 1d8 1dc 1e3 93 1d3 b7 1e8
+1ec 1f1 1f3 1cb ba 1f4 1b8 1e4
+1b3 d7 85 94 e7 c5 fa f3
+197 1a5 1d4 b8 cb 1ba 1f8 97
+e4 b3 a5 fc 185 d4 f8 a6
+d8 a9 dc e8 f4 ec 186 194
+e3 b4 198 1b7 1c5 d3 193 1c6
+1c9 1d7 1da 1e7 b1 1ea 1f7 1fa
+1fc c2 f1 1a2 82 d1 191 e1
+187 fe a7 c4 1a4 95 84 eb
+fd 1c7 1d5 1e5 db 1b9 1b6 1f6
+1f9 1b5 fb c3 1a3 83 1ca 88
+99 96 aa bb c8 cc dd ed
+e2 ee ff 1a8 1d6 d2 192 1d9
+1e6 1e9 1f5 b2 1a1 c1 81 f2
+1b2 181 a1 1c1 1f2 1e2 92 1d2
+b5 1fb 183 1c3 a3 1c8 a8 ca
+d6 d9 e6 e9 f5 c7 e5 188
+87 d5 f9 184 a4 f6 195 196
+199 1a7 b6 1aa b9 91 1bb 1c4
+1cc 1d1 1db 1dd 1e1 1eb 1ed 1ee
+1fd 1fe 1ff 1b1 182 1c2 a2 c9
+86 c6 98 da ea f7 1a6 1a9
+1b4 1d8 1dc 1e3 93 1d3 b7 1e8
+1ec 1f1 1f3 1cb ba 1f4 1b8 1e4
+1b3 d7 85 94 e7 c5 fa f3
+197 1a5 1d4 b8 cb 1ba 1f8 97
+e4 b3 a5 fc 185 d4 f8 a6
+d8 a9 dc e8 f4 ec 186 194
+e3 b4 198 1b7 1c5 d3 193 1c6
+1c9 1d7 1da 1e7 b1 1ea 1f7 1fa
+1fc c2 f1 1a2 82 d1 191 e1
+187 fe a7 c4 1a4 95 84 eb
+fd 1c7 1d5 1e5 db 1b9 1b6 1f6
+1f9 1b5 fb c3 1a3 83 1ca 88
+99 96 aa bb c8 cc dd ed
+e2 ee ff 1a8 1d6 d2 192 1d9
+1e6 1e9 1f5 b2 1a1 c1 81 f2
+1b2 181 a1 1c1 1f2 1e2 92 1d2
+b5 1fb 183 1c3 a3 1c8 a8 ca
+d6 d9 e6 e9 f5 c7 e5 188
+87 d5 f9 184 a4 f6 195 196
+199 1a7 b6 1aa b9 91 1bb 1c4
+1cc 1d1 1db 1dd 1e1 1eb 1ed 1ee
+1fd 1fe 1ff 1b1 182 1c2 a2 c9
+86 c6 98 da ea f7 1a6 1a9
+1b4 1d8 1dc 1e3 93 1d3 b7 1e8
+1ec 1f1 1f3 1cb ba 1f4 1b8 1e4
+1b3 d7 85 94 e7 c5 fa f3
+197 1a5 1d4 b8 cb 1ba 1f8 97
+e4 b3 a5 fc 185 d4 f8 a6
+d8 a9 dc e8 f4 ec 186 194
+e3 b4 198 1b7 1c5 d3 193 1c6
+1c9 1d7 1da 1e7 b1 1ea 1f7 1fa
+1fc c2 f1 1a2 82 d1 191 e1
+187 fe a7 c4 1a4 95 84 eb
+fd 1c7 1d5 1e5 db 1b9 1b6 1f6
+1f9 1b5 fb c3 1a3 83 1ca 88
+99 96 aa bb c8 cc dd ed
+e2 ee ff 1a8 1d6 d2 192 1d9
+1e6 1e9 1f5 b2 1a1 c1 81 f2
+1b2 181 a1 1c1 1f2 1e2 92 1d2
+b5 1fb 183 1c3 a3 1c8 a8 ca
+d6 d9 e6 e9 f5 c7 e5 188
+87 d5 f9 184 a4 f6 195 196
+199 1a7 b6 1aa b9 91 1bb 1c4
+1cc 1d1 1db 1dd 1e1 1eb 1ed 1ee
+1fd 1fe 1ff 1b1 182 1c2 a2 c9
+86 c6 98 da ea f7 1a6 1a9
+1b4 1d8 1dc 1e3 93 1d3 b7 1e8
+1ec 1f1 1f3 1cb ba 1f4 1b8 1e4
+1b3 d7 85 94 e7 c5 fa f3
+197 1a5 1d4 b8 cb 1ba 1f8 97
+e4 b3 a5 fc 185 d4 f8 a6
+d8 a9 dc e8 f4 ec 186 194
+e3 b4 198 1b7 1c5 d3 193 1c6
+1c9 1d7 1da 1e7 b1 1ea 1f7 1fa
+1fc c2 f1 1a2 82 d1 191 e1
+187 fe a7 c4 1a4 95 84 eb
+fd 1c7 1d5 1e5 db 1b9 1b6 1f6
+1f9 1b5 fb c3 1a3 83 1ca 88
+99 96 aa bb c8 cc dd ed
+e2 ee ff 1a8 1d6 d2 192 1d9
+1e6 1e9 1f5 b2 1a1 c1 81 f2
+1b2 181 a1 1c1 1f2 1e2 92 1d2
+b5 1fb 183 1c3 a3 1c8 a8 ca
+d6 d9 e6 e9 f5 c7 e5 188
+87 d5 f9 184 a4 f6 195 196
+199 1a7 b6 1aa b9 91 1bb 1c4
+1cc 1d1 1db 1dd 1e1 1eb 1ed 1ee
+1fd 1fe 1ff 1b1 182 1c2 a2 c9
+86 c6 98 da ea f7 1a6 1a9
+1b4 1d8 1dc 1e3 93 1d3 b7 1e8
+1ec 1f1 1f3 1cb ba 1f4 1b8 1e4
+1b3 d7 85 94 e7 c5 fa f3
+197 1a5 1d4 b8 cb 1ba 1f8 97
+e4 b3 a5 fc 185 d4 f8 a6
+d8 a9 dc e8 f4 ec 186 194
+e3 b4 198 1b7 1c5 d3 193 1c6
+1c9 1d7 1da 1e7 b1 1ea 1f7 1fa
+1fc c2 f1 1a2 82 d1 191 e1
+</a>
+    </comp>
+    <comp lib="0" loc="(240,210)" name="Pin">
+      <a name="width" val="11"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(610,210)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="12"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+  </circuit>
+</project>

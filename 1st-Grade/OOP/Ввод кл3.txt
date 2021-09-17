@@ -1,0 +1,10 @@
+root
+/root object_1 3 1
+/root object_2 2 1
+/root/object_2 object_4 3 -1
+/root/object_2 object_5 4 1
+/root object_3 3 1
+/root/object_2 object_3 6 1
+/root/object_1 object_7 5 1
+/root/object_2/object_4 object_7 3 -1
+endtree
