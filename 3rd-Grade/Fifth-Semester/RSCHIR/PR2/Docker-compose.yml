@@ -1,0 +1,20 @@
+version: '3'
+services:
+  webside:
+    build: ./web
+    volumes:
+      - ./web:/var/www/html
+    ports:
+      - 8000:80
+  sortsite:
+    build: ./sort
+    volumes:
+      - ./sort:/var/www/html
+    ports:
+      - 8001:80
+  unixsite:
+    build: ./unix
+    volumes:
+      - ./unix:/var/www/html
+    ports:
+      - 8002:80
