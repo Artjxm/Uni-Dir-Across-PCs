@@ -1,0 +1,186 @@
+body{
+  background-image: url("https://www.saitotea.jp/wp-content/uploads/sites/60/2019/08/fon3_2.png") ;
+  
+}
+
+header {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    background-color: rgba(220, 230, 165, 0.863);
+    align-content:center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    position: fixed;
+    padding: 0px -20px;
+    z-index:1;
+    top:0;
+    left:0;
+    right:0;  
+    min-width:320px;
+    height:64px;
+}
+header span{
+    color: azure;
+    font-size: 2em;
+    font-weight: 100;
+    text-align: left;
+    
+}
+header a {
+    display: flex;
+    color: rgb(255, 0, 0);
+    font-size: 1.5em;
+    font-weight: 100;
+    text-align: center;
+    text-decoration: none;
+    
+}
+header a:hover {
+    color: crimson;
+}
+header img {
+    height:36px;
+}
+
+
+.content-layout{
+    display: flex;
+    justify-content: center;
+}
+.main-content{
+    padding: 16px;
+    margin-top: 64px;
+    width: 70%;
+    background-color: rgba(220, 230, 165, 0.863);
+}
+ul img {
+    width: 92%;
+    border: 2px solid #4d4d4d;
+}
+p{
+    text-align:justify;
+    width: 93%
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+    z-index: 0;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.glow {
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.glow2 {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+
+body{
+  color:#f57b34
+}

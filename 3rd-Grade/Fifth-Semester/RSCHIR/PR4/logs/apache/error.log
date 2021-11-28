@@ -1,0 +1,11 @@
+[Wed Oct 13 13:27:22.082500 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.2.34 configured -- resuming normal operations
+[Wed Oct 13 13:27:22.083466 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Wed Oct 13 13:27:46.239938 2021] [auth_basic:error] [pid 20] [client 172.26.0.2:34156] AH01618: user Alex not found: /public/users.php, referer: http://localhost:8079/index.html
+[Wed Oct 13 13:27:49.460549 2021] [auth_basic:error] [pid 21] [client 172.26.0.2:34158] AH01618: user Alex not found: /public/users.php, referer: http://localhost:8079/index.html
+[Wed Oct 13 13:27:51.065226 2021] [auth_basic:error] [pid 22] [client 172.26.0.2:34160] AH01618: user Alex not found: /public/users.php, referer: http://localhost:8079/index.html
+[Wed Oct 13 13:29:39.025530 2021] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Wed Oct 13 13:29:55.960213 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.2.34 configured -- resuming normal operations
+[Wed Oct 13 13:29:55.960448 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Wed Oct 13 13:30:17.203382 2021] [auth_basic:error] [pid 19] [client 172.27.0.3:37540] AH01618: user admin not found: /public/users.php, referer: http://localhost:8079/index.html
+[Wed Oct 13 13:30:21.464348 2021] [auth_basic:error] [pid 20] [client 172.27.0.3:37542] AH01618: user Alex not found: /public/users.php, referer: http://localhost:8079/index.html
+[Wed Oct 13 13:31:51.310306 2021] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
