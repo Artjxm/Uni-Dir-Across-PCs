@@ -1,103 +1,3 @@
-insert into subject (su_name) values 
-('Russian language'),
-('Physics'),
-('IT'),
-('Math')
-;
-
-create table Tutor (
-     T_ID int (10) auto_increment,
-T_Name varchar (20) not null,
-     T_Price int (10) not null,
-     T_Subject varchar (20) not null,
-     primary key (T_ID)
-    );
-
-create table Examination (
-     E_ID int (10) auto_increment,
-     E_Date datetime not null,
-     primary key (E_ID)
-     );
-
-insert into examination (e_date) values
-    ('22-05-12 10:30:00'),
-    ('22-06-25 11:00:00'),
-    ('21-06-18 11:00:00'),
-    ('21-07-01 9:45:00');
-
-create table Preparation (
-     P_ID int (10) auto_increment,
-      E_ID int (10) not null,
-       T_ID int (10) not null,
-       St_ID int (10) not null,
-         Su_ID int (10) not null,
-        primary key (P_ID),
-        foreign key (E_ID) references Examination (E_ID),
-         foreign key (T_ID) references Tutor (T_ID),
-     foreign key (St_ID) references Student (St_ID),
-    foreign key (Su_ID) references Subject (Su_ID));
-
-insert into tutor (t_name, t_price, t_subject) values
-('Maxim Kazakov', '38000', 'IT'),
-('Sergey Egorov', '40000', 'Math'),
-('Andrey Ilyin', '50000', 'Physics'),
-('Sergey Gorodnov', '42000', 'IT')
-;
-
-insert into student (st_name, st_subject) values
-('Maris Sibgatulov', 'IT'),
-('Anton Epifanov', 'Math'),
-('Andrey Monakov', 'Physics'),
-('Huseyn Ertek', 'Russian language')
-;
-
-insert into tutor (t_name, t_price, t_subject) values
-('Evgeniy Markelov', '44000', 'Russian language');
-
-insert into school (sc_address, e_id) values
-('Lenina st, 92', '1'),
-('Petrova st, 9', '3'),
-('Trubnaya st, 25', '2'),
-('Nevskaya st 125', '4');
-
-insert into examination (e_date) values
-('22-05-12'),
-('22-06-25'),
-('21-06-18'),
-('21-07-01');
-
-create table School (
-Sc_ID int (10) auto_increment,
-Sc_Address varchar (20) not null,
-E_ID int (10) not null,
-primary key (Sc_ID),
-foreign key (E_ID) references Examination (E_ID)
-);
-
-create table Results (
-     Re_ID int (10) auto_increment,
-     Re_Points int (10) not null,
-     E_ID int (10) not null,
-   primary key (Re_ID),
-   foreign key (E_ID) references Examination (E_ID)
-     );
-
-insert into results (Re_Points, E_id) values
-('98',  '4'),
-('61',  '3'),
-('76',  '2'),
-('54',  '1');
-
-insert into preparation (e_id, t_id, st_id, su_id) values
-('4', '1', '1', '7'),
-('3', '5', '1', '5'),
-('1', '3', '3', '6'),
-('2', '4', '4', '8');
-
-
-
-
-
 create database exams;
 
 use table exams;
@@ -169,7 +69,7 @@ show tables;
 describe subjects;
 
 create table examinations (
-e_id int(10) auto_increment,
+e_id int(10) primary key auto_increment,
 e_name varchar(20) not null,
 e_points int(10) not null,
 e_date date not null,
@@ -178,12 +78,11 @@ st_id int(10) not null,
 sc_id int(10) not null,
 s_id int(10) not null,
 t_id int(10) not null,
-primary key (e_id),
 foreign key (et_id) references etype (et_id),
 foreign key (st_id) references students (st_id),
 foreign key (sc_id) references schools (sc_id),
 foreign key (s_id) references subjects (s_id),
-foreign key (t_id) references tutor (tutor_id)
+foreign key (t_id) references tutor (t_id)
 );
 show tables;
 describe examinations;
