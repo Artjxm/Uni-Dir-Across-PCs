@@ -1,6 +1,6 @@
-create database exams;
+create database ege;
 
-use table exams;
+use table ege;
 
 create table students (
 st_id int(10) auto_increment,
@@ -68,7 +68,7 @@ foreign key (stype_id) references stype (stype_id)
 show tables;
 describe subjects;
 
-create table examinations (
+create table exams (
 e_id int(10) primary key auto_increment,
 e_name varchar(20) not null,
 e_points int(10) not null,
@@ -77,13 +77,80 @@ et_id int(10) not null,
 st_id int(10) not null,
 sc_id int(10) not null,
 s_id int(10) not null,
-t_id int(10) not null,
 foreign key (et_id) references etype (et_id),
 foreign key (st_id) references students (st_id),
 foreign key (sc_id) references schools (sc_id),
-foreign key (s_id) references subjects (s_id),
-foreign key (t_id) references tutor (t_id)
+foreign key (s_id) references subjects (s_id)
 );
 show tables;
-describe examinations;
+describe exams;
 
+insert into students (st_name, st_grade) values 
+('Ivan Ivanov', '4'), 
+('Maxim Maximov', '5'), 
+('Petr Petrov', '3'), 
+('Andrey Andreev', '4');
+
+select * from students;
+
+insert into schools (sc_address) values
+('Neglinka, 23'),
+('Bolshaya ulitsa, 27'),
+('Uchebnaya ulitsa, 3'),
+('Akademika Usova, 9');
+
+select * from schools;
+
+insert into etype (et_name) values
+('ustniy'),
+('pismenniy'),
+('smeshanniy'),
+('testoviy');
+
+select * from etype;
+
+insert into ttype (tt_name) values
+('uchitel'),
+('professor'),
+('repetitor'),
+('student');
+
+select * from ttype;
+
+insert into stype (stype_name) values
+('technicheskiy'),
+('filologicheskiy'),
+('prikladnoy');
+
+select * from stype;
+
+insert into tutor (t_name, t_price, t_exp_years, tt_id) values
+('Maxim Kazakov', '4200', '16', '3'),
+('Denis Umskulin', '3900', '4', '4'),
+('Angelina Kim', '2800', '9', '1'),
+('Nadezhda Petrova', '2600', '12', '2');
+
+select * from tutor;
+
+insert into subjects (s_name, t_id, stype_id) values
+('Informatika', '1', '1'),
+('Biologiya', '4', '1'),
+('Angliyskiy yazik', '3', '2'),
+('O B Zhe', '2', '3');
+
+select * from subjects;
+
+insert into exams (e_name, e_points, e_date, et_id, st_id, sc_id, s_id) values
+('Informatika EGE', '96', '2021.07.12', '4', '16', '1', '1'),
+('O B Zhe EGE', '100', '21.04.25', '1', '15', '2', '4'),
+('English Exam', '88', '21.06.23', '3', '13', '3', '3'),
+('Examen po Biologii', '94', '21.06.05', '2', '14', '4', '2');
+
+select * from exams;
+
+
+
+
+select st_name as Name from students union select t_name from tutor;
+
+select * from subjects left join tutor using(t_id);
