@@ -1,0 +1,133 @@
+Packet Tracer PC Command Line 1.0
+C:\>ping 192.168.1.20
+
+Pinging 192.168.1.20 with 32 bytes of data:
+
+Reply from 192.168.1.20: bytes=32 time<1ms TTL=255
+Reply from 192.168.1.20: bytes=32 time=12ms TTL=255
+Reply from 192.168.1.20: bytes=32 time<1ms TTL=255
+Reply from 192.168.1.20: bytes=32 time<1ms TTL=255
+
+Ping statistics for 192.168.1.20:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 12ms, Average = 3ms
+
+C:\>ping 192.168.1.30
+
+Pinging 192.168.1.30 with 32 bytes of data:
+
+Request timed out.
+Reply from 192.168.1.30: bytes=32 time<1ms TTL=255
+Reply from 192.168.1.30: bytes=32 time<1ms TTL=255
+Reply from 192.168.1.30: bytes=32 time<1ms TTL=255
+
+Ping statistics for 192.168.1.30:
+    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms
+
+C:\>ping 192.168.1.30
+
+Pinging 192.168.1.30 with 32 bytes of data:
+
+Reply from 192.168.1.30: bytes=32 time=8ms TTL=255
+Reply from 192.168.1.30: bytes=32 time<1ms TTL=255
+Reply from 192.168.1.30: bytes=32 time<1ms TTL=255
+Reply from 192.168.1.30: bytes=32 time<1ms TTL=255
+
+Ping statistics for 192.168.1.30:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 8ms, Average = 2ms
+
+C:\>ping 192.168.1.40
+
+Pinging 192.168.1.40 with 32 bytes of data:
+
+Reply from 192.168.1.40: bytes=32 time<1ms TTL=128
+Reply from 192.168.1.40: bytes=32 time=5ms TTL=128
+Reply from 192.168.1.40: bytes=32 time=7ms TTL=128
+Reply from 192.168.1.40: bytes=32 time=7ms TTL=128
+
+Ping statistics for 192.168.1.40:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 7ms, Average = 4ms
+
+R1_MOSKOVKA#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1_MOSKOVKA(config)#ip domain-name pr8.com
+R1_MOSKOVKA(config)#
+
+R1_MOSKOVKA(config)#crypto key generate rsa
+The name for the keys will be: R1_MOSKOVKA.pr8.com
+Choose the size of the key modulus in the range of 360 to 2048 for your
+  General Purpose Keys. Choosing a key modulus greater than 512 may take
+  a few minutes.
+
+How many bits in the modulus [512]: 1024
+% Generating 1024 bit RSA keys, keys will be non-exportable...[OK]
+
+R1_MOSKOVKA(config)#
+
+R1_MOSKOVKA(config)#username SSHadmin privilege 15 secret Admin1p@55
+R1_MOSKOVKA(config)#
+
+R1_MOSKOVKA(config-line)#login local
+R1_MOSKOVKA(config-line)#end
+R1_MOSKOVKA#
+
+R1_MOSKOVKA#copy running-config startup-config
+Destination filename [startup-config]? 
+Building configuration...
+[OK]
+
+
+!!! Верный пользователь (пароль:  Admin1p@55)
+C:\>ssh -l SSHadmin 192.168.1.20
+
+Password: 
+
+ Unauthorized entry! 
+
+
+!!! Неверный пользователь
+R1_MOSKOVKA#ssh -l admiral 192.168.1.20
+
+Password: 
+% Login invalid
+
+
+Password: 
+
+[Connection to 192.168.1.20 closed by foreign host]
+R1_MOSKOVKA#
+
+R1_MOSKOVKA#sh login
+     A default login delay of 1 seconds is applied.
+     No Quiet-Mode access list has been configured.
+
+     Router enabled to watch for login Attacks.
+     If more than 2 login failures occur in 120 seconds or less,
+     logins will be disabled for 30 seconds.
+
+     Router presently in Normal-Mode.
+     Current Watch Window
+         Time remaining: 103 seconds.
+         Login failures for current window: 0.
+     Total login failures: 4.
+
+R1_MOSKOVKA#ssh ?
+  -l  Log in using this user name
+  -v  Specify SSH Protocol Version
+R1_MOSKOVKA#
+
+R1_MOSKOVKA#
+S1#
+S1#
+[Resuming connection 1 to 192.168.1.20 ... ]
+exit
+
+[Connection to 192.168.1.20 closed by foreign host]
+S1#
