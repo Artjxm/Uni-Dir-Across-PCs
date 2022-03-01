@@ -1,0 +1,18 @@
+.H1 {
+  text-shadow:
+    1px 1px 0 orange,
+    1px -1px 0 orange,
+    -1px 1px 0 orange,
+    -1px -1px 0 orange;
+  color: white;
+  transition: all 1s;
+  background-color: transparent;
+}
+
+.H1:hover {
+  text-shadow:
+    1px 1px 0 yellowgreen,
+    1px -1px 0 yellowgreen,
+    -1px 1px 0 yellowgreen,
+    -1px -1px 0 yellowgreen;
+  }
