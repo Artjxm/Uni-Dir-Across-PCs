@@ -2,28 +2,28 @@ import './App.css';
 import Header from "./components/Header";
 import React from "react";
 import SomeData from "./components/SomeData";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import PropComp from "./components/PropComp";
+import Navigation from "./components/Navigation";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Header/>
-        <p>
-            <a href="/dialogs">Dialogs</a>
-          Hello there mista!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-            <img src="img.jpg" alt="pic broke"/>
-          some link
-        </a>
-      </header>
-      <SomeData/>
+    <div className="App-wrapper">
+        <header>
+          <Router>
+            <Navigation/>
+              <Routes>
+                <Route path="/"/>
+                <Route path="/data" element={<SomeData/>}/>
+                <Route path="/head" element={<Header/>}/>
+                <Route path="/prop" element={<PropComp post={{
+                  id: 1,
+                  title: "propComp",
+                  body: "Description"
+                }}/>}/>
+              </Routes>
+          </Router>
+        </header>
     </div>
   );
 }

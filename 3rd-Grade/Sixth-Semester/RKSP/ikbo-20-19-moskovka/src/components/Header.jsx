@@ -1,9 +1,8 @@
 import React from 'react';
 
 function Header(props){
- return(<div>
- <a>Lorem imprus</a>
- </div>
+ return(
+ <div>Hello there, welcome to the main page!</div>
   );
 }
 export default Header;
