@@ -1,4 +1,4 @@
-import './styles/SomeData.css';
+import '../styles/SomeData.css';
 
 function SomeData(){
     return(

@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/propComp.css';
+import '../styles/propComp.css';
 
 const PropComp = (props) => {
     return (
