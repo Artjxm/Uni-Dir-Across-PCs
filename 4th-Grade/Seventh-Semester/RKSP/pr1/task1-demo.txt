@@ -1,0 +1,70 @@
+package pr1;
+
+import java.util.Random;
+
+class MultiThreading implements Runnable {
+    int[] array;
+
+    public MultiThreading(int[] anArray) {
+        this.array = anArray;
+    }
+    public void run() {
+        int sum = 0;
+        try {
+            for (int i = 0; i < array.length/2; ++i) {
+                sum += array[i];
+            }
+            System.out.println("sum = " + sum);
+        } catch (Exception e) {
+            System.out.println("Exception :)");
+        }
+    }
+}
+
+public class task1 {
+    static Random random = new Random();
+
+    public static int f0() {
+        int[] anArray = random.ints(10000, 0 ,100).toArray();
+        int sum = 0;
+
+        for (int j : anArray) sum += j;
+
+        return sum;
+    }
+
+
+
+    public static int f1() {
+        int[] anArray = random.ints(10000, 0 ,100).toArray();
+        int globalSum = 0;
+
+        MultiThreading thread1 = new MultiThreading(anArray);
+
+        Thread t = new Thread(thread1);
+
+        t.start();
+
+        return globalSum;
+    }
+
+    public static void f2(int[] anArray) {
+        int[] anArray3 = random.ints(10000, 0 ,100).toArray();
+
+    }
+
+    public static void main(String[] args) {
+
+//        int[] testArray = new int[10];
+//        for (int i = 0; i < testArray.length; ++i)
+//            testArray[i] = i+1;
+//        for (int j : testArray) System.out.println(j);
+
+//        int sum1 = f0();
+//        System.out.println("Sum  sequentially = " + sum1);
+
+        int sum2 = f1();
+        System.out.println("Sum using multithread = " + sum2);
+
+    }
+}
