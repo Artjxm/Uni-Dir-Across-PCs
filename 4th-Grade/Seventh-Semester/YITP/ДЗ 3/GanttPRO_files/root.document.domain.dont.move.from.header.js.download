@@ -1,0 +1,1 @@
+if (window.document.domain.split('.').length === 3) {window.document.domain = window.document.domain.split('.').splice(1, 2).join('.');} else {window.document.domain = window.document.domain;}
