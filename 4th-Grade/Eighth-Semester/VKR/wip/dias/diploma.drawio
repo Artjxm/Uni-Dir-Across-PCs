@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net" modified="2023-05-23T21:45:43.201Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="iVKMYrt4-unPXkvnaxwF" version="21.1.8" type="device">
+  <diagram name="Страница 1" id="Q1MdZvnlUk2GZYaM6FP0">
+    <mxGraphModel dx="797" dy="379" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="MQloH2F7CVPT3M4eYKjn-1" target="MQloH2F7CVPT3M4eYKjn-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="MQloH2F7CVPT3M4eYKjn-1" target="MQloH2F7CVPT3M4eYKjn-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-1" value="UObject" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="458" y="40" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-2" value="Object" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="588" y="110" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="MQloH2F7CVPT3M4eYKjn-3" target="MQloH2F7CVPT3M4eYKjn-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-3" value="AActor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="328" y="110" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="MQloH2F7CVPT3M4eYKjn-7" target="MQloH2F7CVPT3M4eYKjn-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="MQloH2F7CVPT3M4eYKjn-7" target="MQloH2F7CVPT3M4eYKjn-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="MQloH2F7CVPT3M4eYKjn-7" target="MQloH2F7CVPT3M4eYKjn-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="MQloH2F7CVPT3M4eYKjn-7" target="MQloH2F7CVPT3M4eYKjn-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-7" value="Классы Gameplay Framework" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="328" y="160" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-9" value="GameMode" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="258" y="230" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-11" value="GameState" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="398" y="230" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-13" value="PlayerState" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="538" y="230" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-14" value="Pawn" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="118" y="230" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-17" value="&lt;b&gt;Игра (симуляция)&lt;/b&gt;&lt;br&gt;GameMode&lt;br&gt;GameState" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-20" value="Захватывает" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="MQloH2F7CVPT3M4eYKjn-18" target="MQloH2F7CVPT3M4eYKjn-19">
+          <mxGeometry x="-0.0526" y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-21" value="Взаимодействует" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="MQloH2F7CVPT3M4eYKjn-18" target="MQloH2F7CVPT3M4eYKjn-17">
+          <mxGeometry y="54" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="MQloH2F7CVPT3M4eYKjn-18" target="MQloH2F7CVPT3M4eYKjn-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="MQloH2F7CVPT3M4eYKjn-18" target="MQloH2F7CVPT3M4eYKjn-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="MQloH2F7CVPT3M4eYKjn-18" target="MQloH2F7CVPT3M4eYKjn-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-34" value="Включает:" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="MQloH2F7CVPT3M4eYKjn-33">
+          <mxGeometry x="0.1206" y="-2" relative="1" as="geometry">
+            <mxPoint x="-34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-18" value="PlayerController" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-19" value="Pawn" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-22" value="Пользовательский ввод" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="530" width="142" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-23" value="PlayerCameraManager" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="490" width="142" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MQloH2F7CVPT3M4eYKjn-30" value="HUD" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="569.5" width="142" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
